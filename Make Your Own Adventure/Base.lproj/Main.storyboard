@@ -1,25 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RYg-26-Ufp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="yfA-NO-VVc">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <navigationController id="RYg-26-Ufp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ydg-Xi-mCA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="m6E-U6-hgv" kind="relationship" relationship="rootViewController" id="CGe-35-ZW2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4k-0K-81N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="127.5" y="537"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AMu-4m-pNW">
+            <objects>
+                <viewController id="m6E-U6-hgv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NNN-d8-PeT"/>
+                        <viewControllerLayoutGuide type="bottom" id="yEf-lB-xBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F5h-Ni-sXi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jv-kx-5VC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Leap through the door and roar!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u7-MI-GpT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Stalk to the door, peek down the hallway.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
+                                </variation>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oj6-Ed-7TT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">An immense tiger wakes in an empty room.
+
+A door opens into a hallway...
+
+What should she do?
+
+</string>
+                                <fontDescription key="fontDescription" name="Superclarendon-Regular" family="Superclarendon" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oj6-Ed-7TT" firstAttribute="top" secondItem="NNN-d8-PeT" secondAttribute="bottom" constant="29" id="MHz-8D-OYt"/>
+                            <constraint firstItem="4Jv-kx-5VC" firstAttribute="top" secondItem="Oj6-Ed-7TT" secondAttribute="bottom" constant="161" id="Mye-a5-j1U"/>
+                            <constraint firstItem="yEf-lB-xBU" firstAttribute="top" secondItem="1u7-MI-GpT" secondAttribute="bottom" constant="98" id="QDM-wD-Qag"/>
+                            <constraint firstAttribute="centerX" secondItem="4Jv-kx-5VC" secondAttribute="centerX" id="Sne-ga-NvG"/>
+                            <constraint firstItem="1u7-MI-GpT" firstAttribute="top" secondItem="4Jv-kx-5VC" secondAttribute="bottom" constant="21" id="bph-XL-Vi8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oj6-Ed-7TT" secondAttribute="trailing" constant="11" id="c1w-e3-Vy6"/>
+                            <constraint firstAttribute="centerX" secondItem="1u7-MI-GpT" secondAttribute="centerX" id="vYN-yB-xn3"/>
+                            <constraint firstItem="Oj6-Ed-7TT" firstAttribute="leading" secondItem="F5h-Ni-sXi" secondAttribute="leadingMargin" constant="12" id="wET-Ru-GD3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Jv-kx-5VC"/>
+                                <exclude reference="1u7-MI-GpT"/>
+                                <exclude reference="Oj6-Ed-7TT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MHz-8D-OYt"/>
+                                <exclude reference="c1w-e3-Vy6"/>
+                                <exclude reference="wET-Ru-GD3"/>
+                                <exclude reference="Mye-a5-j1U"/>
+                                <exclude reference="Sne-ga-NvG"/>
+                                <exclude reference="bph-XL-Vi8"/>
+                                <exclude reference="vYN-yB-xn3"/>
+                                <exclude reference="QDM-wD-Qag"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4Jv-kx-5VC"/>
+                                <include reference="1u7-MI-GpT"/>
+                                <include reference="Oj6-Ed-7TT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MHz-8D-OYt"/>
+                                <include reference="c1w-e3-Vy6"/>
+                                <include reference="wET-Ru-GD3"/>
+                                <include reference="Mye-a5-j1U"/>
+                                <include reference="Sne-ga-NvG"/>
+                                <include reference="bph-XL-Vi8"/>
+                                <include reference="vYN-yB-xn3"/>
+                                <include reference="QDM-wD-Qag"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="PmG-NY-eOm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyf-zH-GZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.5" y="540.75"/>
         </scene>
     </scenes>
 </document>
