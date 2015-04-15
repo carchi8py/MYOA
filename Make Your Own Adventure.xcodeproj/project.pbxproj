@@ -13,6 +13,7 @@
 		274A499A1ADB6F7C0067DA5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274A49991ADB6F7C0067DA5C /* Images.xcassets */; };
 		274A499D1ADB6F7C0067DA5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274A499B1ADB6F7C0067DA5C /* LaunchScreen.xib */; };
 		274A49A91ADB6F7C0067DA5C /* Make_Your_Own_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A49A81ADB6F7C0067DA5C /* Make_Your_Own_AdventureTests.swift */; };
+		27B602671ADDFE25007C1E9E /* MYOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B602661ADDFE25007C1E9E /* MYOAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		274A49A21ADB6F7C0067DA5C /* Make Your Own AdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Make Your Own AdventureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		274A49A71ADB6F7C0067DA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		274A49A81ADB6F7C0067DA5C /* Make_Your_Own_AdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Make_Your_Own_AdventureTests.swift; sourceTree = "<group>"; };
+		27B602661ADDFE25007C1E9E /* MYOAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYOAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				274A49991ADB6F7C0067DA5C /* Images.xcassets */,
 				274A499B1ADB6F7C0067DA5C /* LaunchScreen.xib */,
 				274A49901ADB6F7C0067DA5C /* Supporting Files */,
+				27B602661ADDFE25007C1E9E /* MYOAViewController.swift */,
 			);
 			path = "Make Your Own Adventure";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B602671ADDFE25007C1E9E /* MYOAViewController.swift in Sources */,
 				274A49951ADB6F7C0067DA5C /* ViewController.swift in Sources */,
 				274A49931ADB6F7C0067DA5C /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				274A49AE1ADB6F7C0067DA5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		274A49AF1ADB6F7C0067DA5C /* Build configuration list for PBXNativeTarget "Make Your Own AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				274A49B11ADB6F7C0067DA5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

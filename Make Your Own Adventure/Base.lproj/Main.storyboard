@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RYg-26-Ufp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RYg-26-Ufp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,7 @@
         <!--View Controller-->
         <scene sceneID="AMu-4m-pNW">
             <objects>
-                <viewController id="m6E-U6-hgv" sceneMemberID="viewController">
+                <viewController id="m6E-U6-hgv" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NNN-d8-PeT"/>
                         <viewControllerLayoutGuide type="bottom" id="yEf-lB-xBU"/>
@@ -38,9 +39,6 @@
                                 <state key="normal" title="Leap through the door and roar!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="aV7-8N-wSX" kind="show" id="n2f-19-nAX"/>
                                 </connections>
@@ -50,9 +48,6 @@
                                 <state key="normal" title="Stalk to the door, peek down the hallway.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="3Qg-kd-KTd" kind="show" id="OKu-hW-hU4"/>
                                 </connections>
@@ -89,14 +84,14 @@ What should she do?
                                 <exclude reference="Oj6-Ed-7TT"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="QDM-wD-Qag"/>
+                                <exclude reference="bph-XL-Vi8"/>
+                                <exclude reference="vYN-yB-xn3"/>
+                                <exclude reference="Mye-a5-j1U"/>
+                                <exclude reference="Sne-ga-NvG"/>
                                 <exclude reference="MHz-8D-OYt"/>
                                 <exclude reference="c1w-e3-Vy6"/>
                                 <exclude reference="wET-Ru-GD3"/>
-                                <exclude reference="Mye-a5-j1U"/>
-                                <exclude reference="Sne-ga-NvG"/>
-                                <exclude reference="bph-XL-Vi8"/>
-                                <exclude reference="vYN-yB-xn3"/>
-                                <exclude reference="QDM-wD-Qag"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -106,14 +101,14 @@ What should she do?
                                 <include reference="Oj6-Ed-7TT"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="QDM-wD-Qag"/>
+                                <include reference="bph-XL-Vi8"/>
+                                <include reference="vYN-yB-xn3"/>
+                                <include reference="Mye-a5-j1U"/>
+                                <include reference="Sne-ga-NvG"/>
                                 <include reference="MHz-8D-OYt"/>
                                 <include reference="c1w-e3-Vy6"/>
                                 <include reference="wET-Ru-GD3"/>
-                                <include reference="Mye-a5-j1U"/>
-                                <include reference="Sne-ga-NvG"/>
-                                <include reference="bph-XL-Vi8"/>
-                                <include reference="vYN-yB-xn3"/>
-                                <include reference="QDM-wD-Qag"/>
                             </mask>
                         </variation>
                     </view>
@@ -126,7 +121,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="99u-qs-yGi">
             <objects>
-                <viewController id="aV7-8N-wSX" sceneMemberID="viewController">
+                <viewController id="aV7-8N-wSX" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oVx-Lb-jJ1"/>
                         <viewControllerLayoutGuide type="bottom" id="6nq-gj-DOH"/>
@@ -140,9 +135,6 @@ What should she do?
                                 <state key="normal" title="Wait to see what happens next.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="SDy-DC-l2Q" kind="show" id="IbV-oJ-WRf"/>
                                 </connections>
@@ -152,9 +144,6 @@ What should she do?
                                 <state key="normal" title="Attack the old man!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="f14-k0-BBD" kind="show" id="yda-4q-wO2"/>
                                 </connections>
@@ -185,14 +174,14 @@ What should she do?
                                 <exclude reference="o2B-kS-1UE"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Lik-jO-bYX"/>
+                                <exclude reference="0Tj-qO-3SC"/>
+                                <exclude reference="yUM-65-uU1"/>
+                                <exclude reference="NSF-VT-lVR"/>
+                                <exclude reference="y4F-30-w3N"/>
+                                <exclude reference="4wd-eX-BbK"/>
                                 <exclude reference="kfi-6m-EDN"/>
                                 <exclude reference="noT-zy-JZs"/>
-                                <exclude reference="4wd-eX-BbK"/>
-                                <exclude reference="yUM-65-uU1"/>
-                                <exclude reference="0Tj-qO-3SC"/>
-                                <exclude reference="y4F-30-w3N"/>
-                                <exclude reference="NSF-VT-lVR"/>
-                                <exclude reference="Lik-jO-bYX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -202,14 +191,14 @@ What should she do?
                                 <include reference="o2B-kS-1UE"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Lik-jO-bYX"/>
+                                <include reference="0Tj-qO-3SC"/>
+                                <include reference="yUM-65-uU1"/>
+                                <include reference="NSF-VT-lVR"/>
+                                <include reference="y4F-30-w3N"/>
+                                <include reference="4wd-eX-BbK"/>
                                 <include reference="kfi-6m-EDN"/>
                                 <include reference="noT-zy-JZs"/>
-                                <include reference="4wd-eX-BbK"/>
-                                <include reference="yUM-65-uU1"/>
-                                <include reference="0Tj-qO-3SC"/>
-                                <include reference="y4F-30-w3N"/>
-                                <include reference="NSF-VT-lVR"/>
-                                <include reference="Lik-jO-bYX"/>
                             </mask>
                         </variation>
                     </view>
@@ -222,7 +211,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="qBk-xM-Jlg">
             <objects>
-                <viewController id="3Qg-kd-KTd" sceneMemberID="viewController">
+                <viewController id="3Qg-kd-KTd" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wak-hV-K3e"/>
                         <viewControllerLayoutGuide type="bottom" id="Rop-yj-aeT"/>
@@ -236,9 +225,6 @@ What should she do?
                                 <state key="normal" title="Attack the old man!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="LTQ-YN-hDc" kind="show" id="Ajt-Zk-BwQ"/>
                                 </connections>
@@ -248,9 +234,6 @@ What should she do?
                                 <state key="normal" title="Pad quitely down the hallway">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="jt7-th-WVs" kind="show" id="wNz-jL-bW0"/>
                                 </connections>
@@ -280,14 +263,14 @@ What should she do?
                                 <exclude reference="PvI-4r-Z4Q"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="pek-kf-WOc"/>
+                                <exclude reference="IR5-vH-fnQ"/>
+                                <exclude reference="W9l-Mp-BIN"/>
+                                <exclude reference="NTy-zQ-VUn"/>
+                                <exclude reference="bK6-1B-JOc"/>
                                 <exclude reference="N0b-qw-cbb"/>
                                 <exclude reference="RHA-sI-hlo"/>
                                 <exclude reference="cTw-ju-npD"/>
-                                <exclude reference="W9l-Mp-BIN"/>
-                                <exclude reference="IR5-vH-fnQ"/>
-                                <exclude reference="NTy-zQ-VUn"/>
-                                <exclude reference="bK6-1B-JOc"/>
-                                <exclude reference="pek-kf-WOc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -297,14 +280,14 @@ What should she do?
                                 <include reference="PvI-4r-Z4Q"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="pek-kf-WOc"/>
+                                <include reference="IR5-vH-fnQ"/>
+                                <include reference="W9l-Mp-BIN"/>
+                                <include reference="NTy-zQ-VUn"/>
+                                <include reference="bK6-1B-JOc"/>
                                 <include reference="N0b-qw-cbb"/>
                                 <include reference="RHA-sI-hlo"/>
                                 <include reference="cTw-ju-npD"/>
-                                <include reference="W9l-Mp-BIN"/>
-                                <include reference="IR5-vH-fnQ"/>
-                                <include reference="NTy-zQ-VUn"/>
-                                <include reference="bK6-1B-JOc"/>
-                                <include reference="pek-kf-WOc"/>
                             </mask>
                         </variation>
                     </view>
@@ -317,7 +300,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="cH2-JS-erv">
             <objects>
-                <viewController id="SDy-DC-l2Q" sceneMemberID="viewController">
+                <viewController id="SDy-DC-l2Q" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M2O-Vu-DdE"/>
                         <viewControllerLayoutGuide type="bottom" id="q87-JR-dg7"/>
@@ -331,9 +314,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The old man offers a delicious raw steak, which the tiger eats.   She wakes in a room, without an open door.  " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PoN-c6-6yk">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -346,9 +326,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -369,14 +346,14 @@ What should she do?
                                 <exclude reference="D1Z-uc-ug0"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="dgO-ux-Cpk"/>
-                                <exclude reference="WUG-lj-l1a"/>
-                                <exclude reference="na0-Cb-is6"/>
+                                <exclude reference="3qo-B0-QiZ"/>
+                                <exclude reference="WVL-nO-8EE"/>
+                                <exclude reference="bbN-zG-g4T"/>
                                 <exclude reference="pY2-iE-HhR"/>
                                 <exclude reference="v1d-uw-1gc"/>
-                                <exclude reference="bbN-zG-g4T"/>
-                                <exclude reference="WVL-nO-8EE"/>
-                                <exclude reference="3qo-B0-QiZ"/>
+                                <exclude reference="WUG-lj-l1a"/>
+                                <exclude reference="dgO-ux-Cpk"/>
+                                <exclude reference="na0-Cb-is6"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -386,14 +363,14 @@ What should she do?
                                 <include reference="D1Z-uc-ug0"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="dgO-ux-Cpk"/>
-                                <include reference="WUG-lj-l1a"/>
-                                <include reference="na0-Cb-is6"/>
+                                <include reference="3qo-B0-QiZ"/>
+                                <include reference="WVL-nO-8EE"/>
+                                <include reference="bbN-zG-g4T"/>
                                 <include reference="pY2-iE-HhR"/>
                                 <include reference="v1d-uw-1gc"/>
-                                <include reference="bbN-zG-g4T"/>
-                                <include reference="WVL-nO-8EE"/>
-                                <include reference="3qo-B0-QiZ"/>
+                                <include reference="WUG-lj-l1a"/>
+                                <include reference="dgO-ux-Cpk"/>
+                                <include reference="na0-Cb-is6"/>
                             </mask>
                         </variation>
                     </view>
@@ -406,7 +383,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="ELG-gQ-99q">
             <objects>
-                <viewController id="f14-k0-BBD" sceneMemberID="viewController">
+                <viewController id="f14-k0-BBD" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fZ3-Hf-MfG"/>
                         <viewControllerLayoutGuide type="bottom" id="vUM-1h-PfB"/>
@@ -420,9 +397,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Unblinking, the man fires his rifle, and a dart stings the Tiger.   She wakes in the room, but the door is now closed. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sVk-HQ-Ecr">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -435,9 +409,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -458,14 +429,14 @@ What should she do?
                                 <exclude reference="9pI-sC-GWz"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="RbS-GV-z8w"/>
-                                <exclude reference="JAa-iD-JPy"/>
-                                <exclude reference="T0D-as-d2x"/>
-                                <exclude reference="URD-DG-od7"/>
-                                <exclude reference="GVB-QT-kXu"/>
-                                <exclude reference="hOd-6L-lYP"/>
-                                <exclude reference="LpX-6v-JqK"/>
                                 <exclude reference="8XL-ib-a9d"/>
+                                <exclude reference="LpX-6v-JqK"/>
+                                <exclude reference="hOd-6L-lYP"/>
+                                <exclude reference="GVB-QT-kXu"/>
+                                <exclude reference="URD-DG-od7"/>
+                                <exclude reference="JAa-iD-JPy"/>
+                                <exclude reference="RbS-GV-z8w"/>
+                                <exclude reference="T0D-as-d2x"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -475,14 +446,14 @@ What should she do?
                                 <include reference="9pI-sC-GWz"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="RbS-GV-z8w"/>
-                                <include reference="JAa-iD-JPy"/>
-                                <include reference="T0D-as-d2x"/>
-                                <include reference="URD-DG-od7"/>
-                                <include reference="GVB-QT-kXu"/>
-                                <include reference="hOd-6L-lYP"/>
-                                <include reference="LpX-6v-JqK"/>
                                 <include reference="8XL-ib-a9d"/>
+                                <include reference="LpX-6v-JqK"/>
+                                <include reference="hOd-6L-lYP"/>
+                                <include reference="GVB-QT-kXu"/>
+                                <include reference="URD-DG-od7"/>
+                                <include reference="JAa-iD-JPy"/>
+                                <include reference="RbS-GV-z8w"/>
+                                <include reference="T0D-as-d2x"/>
                             </mask>
                         </variation>
                     </view>
@@ -495,7 +466,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="rOf-If-8qt">
             <objects>
-                <viewController id="LTQ-YN-hDc" sceneMemberID="viewController">
+                <viewController id="LTQ-YN-hDc" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8N5-Tl-gq2"/>
                         <viewControllerLayoutGuide type="bottom" id="uah-1G-zzt"/>
@@ -509,9 +480,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eA2-Qz-fek">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -525,9 +493,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -548,14 +513,14 @@ What should she do?
                                 <exclude reference="ydq-XM-ihh"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Dlc-fO-w4E"/>
-                                <exclude reference="ftt-qX-dTg"/>
-                                <exclude reference="FL7-Yk-n1r"/>
-                                <exclude reference="awp-IZ-MoN"/>
+                                <exclude reference="zW9-DD-vIv"/>
                                 <exclude reference="S67-Db-5P7"/>
+                                <exclude reference="awp-IZ-MoN"/>
                                 <exclude reference="1Bx-Ze-Zbl"/>
                                 <exclude reference="vSR-my-FDE"/>
-                                <exclude reference="zW9-DD-vIv"/>
+                                <exclude reference="Dlc-fO-w4E"/>
+                                <exclude reference="FL7-Yk-n1r"/>
+                                <exclude reference="ftt-qX-dTg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -565,14 +530,14 @@ What should she do?
                                 <include reference="ydq-XM-ihh"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Dlc-fO-w4E"/>
-                                <include reference="ftt-qX-dTg"/>
-                                <include reference="FL7-Yk-n1r"/>
-                                <include reference="awp-IZ-MoN"/>
+                                <include reference="zW9-DD-vIv"/>
                                 <include reference="S67-Db-5P7"/>
+                                <include reference="awp-IZ-MoN"/>
                                 <include reference="1Bx-Ze-Zbl"/>
                                 <include reference="vSR-my-FDE"/>
-                                <include reference="zW9-DD-vIv"/>
+                                <include reference="Dlc-fO-w4E"/>
+                                <include reference="FL7-Yk-n1r"/>
+                                <include reference="ftt-qX-dTg"/>
                             </mask>
                         </variation>
                     </view>
@@ -585,7 +550,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="neB-4V-awV">
             <objects>
-                <viewController id="jt7-th-WVs" sceneMemberID="viewController">
+                <viewController id="jt7-th-WVs" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J0N-T2-ooM"/>
                         <viewControllerLayoutGuide type="bottom" id="XEf-KT-zX9"/>
@@ -599,9 +564,6 @@ What should she do?
                                 <state key="normal" title="Check out the kitchen">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="X6h-P1-Go5" kind="show" id="udS-h0-hbA"/>
                                 </connections>
@@ -611,9 +573,6 @@ What should she do?
                                 <state key="normal" title="Try for the forest">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="c4f-7u-po0" kind="show" id="i94-Jc-SJ8"/>
                                 </connections>
@@ -643,14 +602,14 @@ What should she do?
                                 <exclude reference="sx5-NV-wff"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="yzl-8e-1hi"/>
-                                <exclude reference="lRF-bk-8SC"/>
-                                <exclude reference="d4x-ct-ubI"/>
-                                <exclude reference="jKL-bl-RNg"/>
-                                <exclude reference="llm-wH-2Ue"/>
+                                <exclude reference="HY0-TC-ZYy"/>
                                 <exclude reference="5wD-u2-53y"/>
                                 <exclude reference="Uoi-jT-dnM"/>
-                                <exclude reference="HY0-TC-ZYy"/>
+                                <exclude reference="jKL-bl-RNg"/>
+                                <exclude reference="llm-wH-2Ue"/>
+                                <exclude reference="d4x-ct-ubI"/>
+                                <exclude reference="lRF-bk-8SC"/>
+                                <exclude reference="yzl-8e-1hi"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -660,14 +619,14 @@ What should she do?
                                 <include reference="sx5-NV-wff"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="yzl-8e-1hi"/>
-                                <include reference="lRF-bk-8SC"/>
-                                <include reference="d4x-ct-ubI"/>
-                                <include reference="jKL-bl-RNg"/>
-                                <include reference="llm-wH-2Ue"/>
+                                <include reference="HY0-TC-ZYy"/>
                                 <include reference="5wD-u2-53y"/>
                                 <include reference="Uoi-jT-dnM"/>
-                                <include reference="HY0-TC-ZYy"/>
+                                <include reference="jKL-bl-RNg"/>
+                                <include reference="llm-wH-2Ue"/>
+                                <include reference="d4x-ct-ubI"/>
+                                <include reference="lRF-bk-8SC"/>
+                                <include reference="yzl-8e-1hi"/>
                             </mask>
                         </variation>
                     </view>
@@ -680,7 +639,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="ur1-Yi-3Oh">
             <objects>
-                <viewController id="X6h-P1-Go5" sceneMemberID="viewController">
+                <viewController id="X6h-P1-Go5" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1wp-o1-ygC"/>
                         <viewControllerLayoutGuide type="bottom" id="YUI-Ar-LyY"/>
@@ -694,9 +653,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dE9-Sm-kaE">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -710,9 +666,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -733,14 +686,14 @@ What should she do?
                                 <exclude reference="PBU-hJ-Q9G"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Hpk-hO-6jk"/>
+                                <exclude reference="19z-tX-qTE"/>
+                                <exclude reference="n7v-ZY-bjr"/>
+                                <exclude reference="6Ut-wp-Jzi"/>
+                                <exclude reference="Vfd-YP-rTT"/>
+                                <exclude reference="FNG-ni-Uri"/>
                                 <exclude reference="VuG-Gq-T3Z"/>
                                 <exclude reference="Xsk-ct-3CO"/>
-                                <exclude reference="FNG-ni-Uri"/>
-                                <exclude reference="n7v-ZY-bjr"/>
-                                <exclude reference="19z-tX-qTE"/>
-                                <exclude reference="Vfd-YP-rTT"/>
-                                <exclude reference="6Ut-wp-Jzi"/>
-                                <exclude reference="Hpk-hO-6jk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -750,14 +703,14 @@ What should she do?
                                 <include reference="PBU-hJ-Q9G"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Hpk-hO-6jk"/>
+                                <include reference="19z-tX-qTE"/>
+                                <include reference="n7v-ZY-bjr"/>
+                                <include reference="6Ut-wp-Jzi"/>
+                                <include reference="Vfd-YP-rTT"/>
+                                <include reference="FNG-ni-Uri"/>
                                 <include reference="VuG-Gq-T3Z"/>
                                 <include reference="Xsk-ct-3CO"/>
-                                <include reference="FNG-ni-Uri"/>
-                                <include reference="n7v-ZY-bjr"/>
-                                <include reference="19z-tX-qTE"/>
-                                <include reference="Vfd-YP-rTT"/>
-                                <include reference="6Ut-wp-Jzi"/>
-                                <include reference="Hpk-hO-6jk"/>
                             </mask>
                         </variation>
                     </view>
@@ -770,7 +723,7 @@ What should she do?
         <!--View Controller-->
         <scene sceneID="5ch-dp-uvZ">
             <objects>
-                <viewController id="c4f-7u-po0" sceneMemberID="viewController">
+                <viewController id="c4f-7u-po0" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="esK-Sn-fUx"/>
                         <viewControllerLayoutGuide type="bottom" id="Av5-we-VDU"/>
@@ -784,9 +737,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="621" width="400" height="30"/>
-                                </variation>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The door opens to a dense forest.   The tiger pads in. She knows no humans can follow. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jH9-Zp-Fkm">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -799,9 +749,6 @@ What should she do?
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="672" width="400" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -822,14 +769,14 @@ What should she do?
                                 <exclude reference="EGH-oi-PYH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="LVC-Cm-hsT"/>
-                                <exclude reference="IXd-zM-X0h"/>
-                                <exclude reference="xyD-fd-nLC"/>
+                                <exclude reference="XBg-le-qlg"/>
                                 <exclude reference="gUl-9F-264"/>
                                 <exclude reference="n9t-gG-TAT"/>
                                 <exclude reference="fQr-Jt-fi8"/>
                                 <exclude reference="lwq-Pv-FZQ"/>
-                                <exclude reference="XBg-le-qlg"/>
+                                <exclude reference="IXd-zM-X0h"/>
+                                <exclude reference="LVC-Cm-hsT"/>
+                                <exclude reference="xyD-fd-nLC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -839,14 +786,14 @@ What should she do?
                                 <include reference="EGH-oi-PYH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="LVC-Cm-hsT"/>
-                                <include reference="IXd-zM-X0h"/>
-                                <include reference="xyD-fd-nLC"/>
+                                <include reference="XBg-le-qlg"/>
                                 <include reference="gUl-9F-264"/>
                                 <include reference="n9t-gG-TAT"/>
                                 <include reference="fQr-Jt-fi8"/>
                                 <include reference="lwq-Pv-FZQ"/>
-                                <include reference="XBg-le-qlg"/>
+                                <include reference="IXd-zM-X0h"/>
+                                <include reference="LVC-Cm-hsT"/>
+                                <include reference="xyD-fd-nLC"/>
                             </mask>
                         </variation>
                     </view>
